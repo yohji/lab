@@ -23,10 +23,5 @@
 			<artifactId>commons-lang3</artifactId>
 			<version>3.4</version>
 		</dependency>
-		<dependency>
-			<groupId>de.danielbechler</groupId>
-			<artifactId>java-object-diff</artifactId>
-			<version>0.94</version>
-		</dependency>
 	</dependencies>
 </project>

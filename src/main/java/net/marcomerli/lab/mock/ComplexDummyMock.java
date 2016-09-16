@@ -1,5 +1,6 @@
 package net.marcomerli.lab.mock;
 
+import java.math.BigDecimal;
 import java.util.LinkedHashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -13,6 +14,24 @@ public class ComplexDummyMock extends DummyMock {
 	protected List<DummyMock> zb;
 	protected DummyMock[] zc;
 	protected Map<Long, DummyMock> zd;
+
+	public ComplexDummyMock() {}
+
+	public ComplexDummyMock(Long a, Double b, int c, String d, Boolean e, BigDecimal f, String[] g) {
+
+		super(a, b, c, d, e, f, g);
+	}
+
+	public ComplexDummyMock(Long a, Double b, int c, String d, Boolean e, BigDecimal f, String[] g,
+		DummyMock za, List<DummyMock> zb, DummyMock[] zc, Map<Long, DummyMock> zd) {
+
+		super(a, b, c, d, e, f, g);
+
+		this.za = za;
+		this.zb = zb;
+		this.zc = zc;
+		this.zd = zd;
+	}
 
 	@Override
 	public boolean equals(Object obj)
